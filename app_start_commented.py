@@ -2,6 +2,7 @@
 # We're importing the 'streamlit' library, which is a set of tools for building web apps.
 # We give it a nickname 'st' so it's faster to type (e.g., st.title instead of streamlit.title).
 import streamlit as st
+import random
 
 # --- 2. SET UP THE APP'S TITLE ---
 # This command draws the main title on our web page.
