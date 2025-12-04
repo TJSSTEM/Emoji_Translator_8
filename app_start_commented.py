@@ -13,7 +13,7 @@ with st.expander("👉 How to use this app"):
     st.write("""
         1.  Type a sentence in the **"Enter your text"** box.
         2.  If your sentence includes any of the "Magic Words" listed below, they will be translated into emojis!
-        3.  Try it! Type: `I love coding with python and my cat`
+        3.  Try it! Type: `poo cold`
     """)
 # --- End of new section ---
 
