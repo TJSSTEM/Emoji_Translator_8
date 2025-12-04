@@ -76,6 +76,8 @@ if "secret"in user_input.lower():
     st.write("🪇You Found The Secret🪇")
 if "mr.steve"in user_input.lower():
     st.write("🚌You Found The Secret🚌")
+if "hawking"in user_input.lower():
+    st.write("🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️You Found The Secret🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️")
 # We create a new, empty list to store our translated words.
 translated_words = []
 
