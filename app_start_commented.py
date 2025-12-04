@@ -29,7 +29,7 @@ with st.expander("👉 How to use this app"):
 #
 EMOJI_DICT = {
     "tooth": "🦷",
-    "stephen hawking": "🧑🏼‍🦽‍➡️",
+    "vrooooom": "🧑🏼‍🦽‍➡️",
     "blind": "🧑🏻‍🦯‍➡️",
     "alien": "👾",
     "dog": "🐶",
@@ -62,7 +62,7 @@ st.markdown("---")  # Adds a horizontal line
 # The text inside the parentheses is the 'prompt' the user will see.
 # We store whatever the user types in a variable called `user_input`.
 #
-user_input = st.text_input("Enter your text to translate:")
+user_input = st.text_input("Enter your text to translate and have fun vroooooooooooom🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️:")
 
 # --- 6. "TRANSLATE" THE TEXT ---
 # This is where the main logic happens!
