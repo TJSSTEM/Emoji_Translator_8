@@ -37,9 +37,9 @@ EMOJI_DICT = {
     "poo": "💩",
     "rooster": "🐓",
     "suit": "🕴🏼",
-    "cold": "🥶"
+    "cold": "🥶",
+    "santa": random.choice(["🎅🏿","🎅🏾","🎅🏼"])
     # Students can add more!
-}
 
 # ------------------------------------
 
