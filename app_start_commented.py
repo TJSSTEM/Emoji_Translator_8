@@ -69,8 +69,7 @@ user_input = st.text_input("Enter your text to translate and have fun vroooooooo
 
 # First, we make all words lowercase (so 'Cat' becomes 'cat')
 # Second, we 'split' the sentence into a list of individual words.
-# e.g., "My Cat is cool" -> ["my", "cat", "
-is", "cool"]
+# e.g., "My Cat is cool" -> ["my", "cat", "is", "cool"]
 words = user_input.lower().split()
 if"secret"in user_input.lower(🪇 You Found The Secret🪇)
 
