@@ -40,6 +40,7 @@ EMOJI_DICT = {
     "cold": "🥶",
     "santa": random.choice(["🎅🏿","🎅🏾","🎅🏼"])
     # Students can add more!
+}
 
 # ------------------------------------
 
