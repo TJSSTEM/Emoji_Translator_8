@@ -6,7 +6,7 @@ import random
 
 # --- 2. SET UP THE APP'S TITLE ---
 # This command draws the main title on our web page.
-st.title("Mr.Steve is the Best 💬➡️🚌🚌🚌🚌🚌🚌😎")
+st.title("Mr.Steve is the Best The pens are n/a 💬➡️🚌🚌🚌🚌🚌🚌😎")
 
 # --- NEW: Instructions Section ---
 with st.expander("👉 How to use this app"):
