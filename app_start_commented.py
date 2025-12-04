@@ -29,7 +29,7 @@ with st.expander("👉 How to use this app"):
 #
 EMOJI_DICT = {
     "tooth": "🦷",
-    "vrooooom": "🧑🏼‍🦽‍➡️",
+    "vrooom": "🧑🏼‍🦽‍➡️",
     "blind": "🧑🏻‍🦯‍➡️",
     "alien": "👾",
     "dog": "🐶",
