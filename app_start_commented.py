@@ -6,7 +6,7 @@ import random
 
 # --- 2. SET UP THE APP'S TITLE ---
 # This command draws the main title on our web page.
-st.title("My Emoji Translator 💬➡️😎")
+st.title("jerome 💬➡️😎")
 
 # --- NEW: Instructions Section ---
 with st.expander("👉 How to use this app"):
@@ -28,16 +28,16 @@ with st.expander("👉 How to use this app"):
 # Don't forget the comma after each line!
 #
 EMOJI_DICT = {
-    "love": "❤️",
-    "happy": "😊",
-    "sad": "😢",
-    "cat": "🐱",
+    "tooth": "🦷",
+    "stephen hawking": "🧑🏼‍🦽‍➡️",
+    "blind": "🧑🏻‍🦯‍➡️",
+    "alien": "👾",
     "dog": "🐶",
     "sun": "☀️",
-    "coding": "💻",
-    "win": "🏆",
-    "python": "🐍",
-    "fire": "🔥"
+    "poo": "💩",
+    "rooster": "🐓",
+    "suit": "🕴🏼",
+    "cold": "🥶"
     # Students can add more!
 }
 
