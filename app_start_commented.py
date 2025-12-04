@@ -71,7 +71,7 @@ user_input = st.text_input("Enter your text to translate and have fun vroooooooo
 # Second, we 'split' the sentence into a list of individual words.
 # e.g., "My Cat is cool" -> ["my", "cat", "is", "cool"]
 words = user_input.lower().split()
-if"secret"in user_input.lower("You Found The Secret"):
+if "secret"in user_input.lower("🪇You Found The Secret🪇"):
 
 # We create a new, empty list to store our translated words.
 translated_words = []
