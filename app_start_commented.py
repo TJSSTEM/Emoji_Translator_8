@@ -1,102 +1,173 @@
-# --- 1. IMPORT YOUR TOOLS ---
-# We're importing the 'streamlit' library, which is a set of tools for building web apps.
-# We give it a nickname 'st' so it's faster to type (e.g., st.title instead of streamlit.title).
+# ============================================================
+# 🚀 MY EMOJI TRANSLATOR
+# A fun Python + Streamlit activity!
+# ============================================================
+
 import streamlit as st
-import random
 
-# --- 2. SET UP THE APP'S TITLE ---
-# This command draws the main title on our web page.
-st.title("Mr.Steve is the Best The pens are n/a 💬➡️🚌🚌🚌🚌🚌🚌😎")
 
-# --- NEW: Instructions Section ---
+# ============================================================
+# 🎨 CHALLENGE 1: MAKE THE APP YOURS!
+# ============================================================
+# You can safely change the text and emojis in this section.
+#
+# Try:
+# - Giving your app a new name
+# - Changing the emojis
+# - Writing your own welcome message
+
+
+st.title("My Emoji Translator 💬➡️😎")
+
+st.write("Turn your words into emojis! 🚀")
+
+st.info("💡 Try typing: I love coding with python and my cat")
+
+
+# ============================================================
+# 👉 HOW TO USE THE APP
+# ============================================================
+
 with st.expander("👉 How to use this app"):
     st.write("""
-        1.  Type a sentence in the **"Enter your text"** box.
-        2.  If your sentence includes any of the "Magic Words" listed below, they will be translated into emojis!
-        3.  Try it! Type: `poo cold`
+    1. Type a sentence in the **Enter your text** box.
+    2. The app will look for its **Magic Words**.
+    3. Magic Words will be changed into emojis!
+    4. Try adding your own Magic Words to the code.
     """)
-# --- End of new section ---
 
 
-# --- 3. CREATE THE "DICTIONARY" ---
-# This is a Python Dictionary. It stores data as "key: value" pairs.
-# It's our 'brain' for translating. The 'key' is the word to find,
-# and the 'value' is the emoji to replace it with.
+# ============================================================
+# 🧠 CHALLENGE 2: TEACH THE APP NEW WORDS!
+# ============================================================
 #
-# --- CHALLENGE 1: Add your words! ---
-# Add at least 5 of your own key:value pairs to this dictionary.
-# Don't forget the comma after each line!
+# This dictionary is the "brain" of our translator.
 #
+# Each word is connected to an emoji:
+#
+# "pizza": "🍕",
+#
+# 🎯 YOUR MISSION:
+# Add at least 3 NEW words!
+#
+# ⚠️ Remember:
+# - Put the word inside "quotation marks"
+# - Add a colon :
+# - Add your emoji
+# - Add a comma ,
+#
+# Example:
+#
+# "soccer": "⚽",
+# "pizza": "🍕",
+# "rocket": "🚀",
+#
+
 EMOJI_DICT = {
-    "tooth": "🦷",
-    "vrooom": "🧑🏼‍🦽‍➡️",
-    "blind": "🧑🏻‍🦯‍➡️",
-    "alien": "👾",
+    "love": "❤️",
+    "happy": "😊",
+    "sad": "😢",
+    "cat": "🐱",
     "dog": "🐶",
     "sun": "☀️",
-    "poo": "💩",
-    "rooster": "🐓",
-    "suit": "🕴🏼",
-    "cold": "🥶",
-    "santa": random.choice(["🎅🏿","🎅🏾","🎅🏼"])
-    # Students can add more!
+    "coding": "💻",
+    "win": "🏆",
+    "python": "🐍",
+    "fire": "🔥",
+
+    # 👇 ADD YOUR NEW MAGIC WORDS HERE!
+
+
+
 }
 
-# ------------------------------------
 
-# --- 4. (Helper) SHOW THE "MAGIC WORDS" ---
-# This isn't part of the challenge. This code just
-# joins all the 'keys' (words) from our dictionary and
-# displays them on the screen so the user knows what to type.
-st.subheader("Magic Words We Know:")
-# We'll join all the keys (the words) into a single string
+# ============================================================
+# ✨ SHOW OUR MAGIC WORDS
+# ============================================================
+
+st.subheader("✨ Magic Words We Know")
+
 st.write(", ".join(EMOJI_DICT.keys()))
-st.markdown("---")  # Adds a horizontal line
-# --- End of new section ---
+
+st.markdown("---")
 
 
-# --- 5. GET INPUT FROM THE USER ---
-# We need to ask the user to type something.
-#
-# --- CHALLENGE 2: Get user input ---
-# Use the correct `st` command to draw a text box on the screen.
-# The text inside the parentheses is the 'prompt' the user will see.
-# We store whatever the user types in a variable called `user_input`.
-#
-user_input = st.text_input("Enter your text to translate and have fun vroooooooooooom🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️:")
+# ============================================================
+# 💬 TYPE YOUR SENTENCE
+# ============================================================
 
-# --- 6. "TRANSLATE" THE TEXT ---
-# This is where the main logic happens!
+user_input = st.text_input(
+    "Enter your text to translate:",
+    placeholder="Example: I love coding with my cat"
+)
 
-# First, we make all words lowercase (so 'Cat' becomes 'cat')
-# Second, we 'split' the sentence into a list of individual words.
-# e.g., "My Cat is cool" -> ["my", "cat", "is", "cool"]
+
+# ============================================================
+# 🤖 THE TRANSLATOR
+# ============================================================
+# You don't need to change this part.
+# This is where Python does the translating!
+
 words = user_input.lower().split()
-if "secret"in user_input.lower():
-    st.write("🪇You Found The Secret🪇")
-if "mr.steve"in user_input.lower():
-    st.write("🚌You Found The Secret🚌")
-if "hawking"in user_input.lower():
-    st.write("🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️You Found The Secret🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️🧑🏼‍🦽‍➡️")
-# We create a new, empty list to store our translated words.
+
 translated_words = []
 
-# --- 7. LOOP THROUGH ALL THE WORDS ---
-# This 'for' loop looks at each 'word' in our 'words' list, one by one.
 for word in words:
-    # Use .get() to find the word in our dictionary.
-    # If it's not found, it just returns the original word.
-    translated_word = EMOJI_DICT.get(word, word)
+
+    # Remove simple punctuation while looking for the word.
+    clean_word = word.strip(".,!?")
+
+    # Look for the word in our Emoji Dictionary.
+    translated_word = EMOJI_DICT.get(clean_word, word)
+
     translated_words.append(translated_word)
 
-# --- 8. JOIN THE WORDS BACK TOGETHER ---
-# We're doing the opposite of .split(). We're 'joining' the
-# list of translated words back into a single string,
-# separated by a space (" ").
+
+# Put all the words back together.
+
 output_sentence = " ".join(translated_words)
 
-# --- 9. DISPLAY THE RESULT ---
-# If the user typed something, show the result.
+
+# ============================================================
+# 😎 SHOW THE RESULT
+# ============================================================
+
 if output_sentence:
-    st.header("Your Emoji Sentence:")
-    st.write(output_sentence)
+
+    st.subheader("😎 Your Emoji Sentence")
+
+    st.success(output_sentence)
+
+
+# ============================================================
+# 🎉 CHALLENGE 3: ADD A SURPRISE!
+# ============================================================
+#
+# What do you think these commands do?
+#
+# Remove the # from ONE of them and run your app!
+#
+# st.balloons()
+#
+# st.snow()
+#
+# Which one do you like better? 🎈❄️
+
+
+# ============================================================
+# 🏆 BONUS DESIGN CHALLENGE
+# ============================================================
+#
+# Can you make your app different from everyone else's?
+#
+# Try changing:
+#
+# ⭐ The app title
+# ⭐ The emojis
+# ⭐ The welcome message
+# ⭐ The instructions
+# ⭐ Your Magic Words
+#
+# Be creative! 🚀
+# ============================================================
