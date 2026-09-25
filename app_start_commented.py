@@ -77,9 +77,9 @@ EMOJI_DICT = {
     "ai":"👾",
     
     # 👇 ADD YOUR NEW MAGIC WORDS HERE!
-"swirl":"🌀"
-"rainy" : "☔"
-"storm" : "⛈️"
+    "swirl": "🌀"
+    "rainy": "☔"
+    "storm": "⛈️"
 }
 
 
