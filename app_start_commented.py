@@ -148,7 +148,7 @@ if output_sentence:
 # What do you think these commands do?
 #
 # Remove the # from ONE of them and run your app!
-# st.balloons()
+st.balloons()
 #
 st.snake()
 #
