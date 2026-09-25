@@ -150,7 +150,7 @@ if output_sentence:
 # Remove the # from ONE of them and run your app!
 st.balloons()
 #
-st.snake()
+# st.snake()
 #
 # Which one do you like better? 🎈❄️
 
